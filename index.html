@@ -7,254 +7,944 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <title>18 tarikh</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<title>Restourent</title>
     <style>
-        .banner{
-            background: url("n.jpeg");
-            height:100vh;
-            background-size: cover;
-            background-position:center;
-            overflow:hidden;
-            position: relative;
-        }
-        .banner .waves{
-            position: absolute;
-            bottom:0;
-            width: 100%;
-            left:0;
-
-        }
-        .banner1{
+        .section1{
+            background-color:rgb(29, 26, 26);
             
-            height:300px;
-            background-size: cover;
-            background-position:center;
-            overflow:hidden;
-            position: relative;
-        }
-        .banner1 .waves1{
-            position: absolute;
-            bottom:0;
-            width: 100%;
-            left:0;
-
-        }
-        .heading-part{
-            height:120px;
-            width:700px;
-            font-size:60px;
-            color:aliceblue;
-            margin-left: 400px;
-            margin-top: 100px;
-            font-family:'Courier New', Courier, monospace;
-        }
-        .heading-part1{
+            width:1500px;
+            background-image: url(../restourant/cover/cover1_1500x900.jpg);
+            background-repeat: no-repeat;
+            position:relative;
+            opacity: 2.0;
             
-            width:1000px;
-            font-size:60px;
-            color:rgb(30, 121, 200);
-            margin-left: 250px;
-            margin-top: 100px;
-            font-family:'Courier New', Courier, monospace;
+            
         }
-        .secondpart{
-            display: flex;
-            justify-content: space-between;
-            background-color: #1C1678;
+        .verticle-line{
+            width:1px;
+            height:900px;
+            background-color: goldenrod;
+            margin-left:50px;
+        }
+        .verticle-lineabout{
+            width:1px;
+            height:600px;
+            background-color: goldenrod;
+            margin-left:50px;
+        }
+        .verticle-linemiddle1{
+            width:1px;
             height:400px;
-            
-
+            background-color: rgb(71, 70, 68);
+            margin-left:100px;
         }
-        .third-part{
-            margin-left: 200px;
+        .verticle-linemiddle2{
+            width:1px;
+            height:400px;
+            background-color: rgb(71, 70, 68);
+            margin-left:200px;
+        }
+        .verticle-linemiddle3{
+            width:1px;
+            height:400px;
+            background-color: rgb(71, 70, 68);
+            margin-left:300px;
+        }
+        .verticle-linemiddle4{
+            width:1px;
+            height:400px;
+            background-color: rgb(71, 70, 68);
+            margin-left:100px;
+        }
+        .verticle-lineleft{
+            width:1px;
+            height:80px;
+            background-color: goldenrod;
+            margin-left:100px;
+        }
+        .verticle-lineleft1{
+            width:1px;
+            height:80px;
+            background-color: goldenrod;
+            margin-left:10px;
+        }
+        .verticle-line1{
+            width:1px;
+            height:900px;
+            background-color: goldenrod;
+            margin-left:10px;
+        }
+        .verticle-line1about{
+            width:1px;
+            height:600px;
+            background-color: goldenrod;
+            margin-left:10px;
+        }
+        .verticle-line22{
+            width:1px;
+            height:900px;
+            background-color: goldenrod;
+            margin-right:40px;
+        }
+        .verticle-line22about{
+            width:1px;
+            height:600px;
+            background-color: goldenrod;
+            margin-right:40px;
+        }
+        .verticle-line22book{
+            width:1px;
+            height:400px;
+            background-color: rgb(81, 79, 74);
             margin-right:100px;
         }
-        .forth-part{
-             height:500px;
-           
-             
-             background-color:linear-gradient(to left,rgb(76, 76, 240),rgb(75, 75, 129),rgb(19, 19, 71));
+        .verticle-line2{
+            width:1px;
+            height:900px;
+            background-color: goldenrod;
+            margin-left:10px;
         }
-        .nav-tabs{
-            border:0px;
-            margin-left: 300px;
-            margin-bottom: 30px;
+        .verticle-line2about{
+            width:1px;
+            height:600px;
+            background-color: goldenrod;
+            margin-left:10px;
         }
-        .bat{
-            color:aliceblue;
+        
+       
+        
+        .part1{
+            display: flex;
+            justify-content: space-between;
+        }
+        .navbardesign{
+            color:wheat;
+            font-size: 26px;
+            font-family:Dancing script;
+        }
+        .overley{
+            position: absolute;
+            height:100px;
+            width:1000px;
             font-size: 30px;
-            
+            color:goldenrod;
+            margin-left: 100px;
+            margin-top:200px;
+            font-family:Dancing;
+        }
+        .overley1{
+            position: absolute;
+            height:100px;
+            width:1000px;
+            font-size: 30px;
+            color:goldenrod;
+            margin-left: 300px;
+            margin-top:100px;
+            font-family:Dancing;
+        }
+        .overley2{
+            position: absolute;
+            height:100px;
+            width:1000px;
+            font-size: 30px;
+            color:goldenrod;
+            margin-left: 200px;
+            margin-top:50px;
+            font-family:Dancing;
+        }
+        .overley3{
+            position: absolute;
+            height:900px;
+            width:1000px;
+            font-size: 30px;
+            color:goldenrod;
+            margin-left: 70px;
+            margin-top:10px;
+            font-family:Dancing;
+        }
+        .overley4{
+            position: absolute;
+            height:900px;
+            width:1000px;
+            font-size: 30px;
+            color:goldenrod;
+            margin-left: 400px;
+            margin-top:10px;
+            font-family:Dancing;
+        }
+        .overley5{
+            position: absolute;
+            height:900px;
+            width:1000px;
+            font-size: 30px;
+            color:goldenrod;
+            margin-left: 80px;
+            margin-top:280px;
+            font-family:Dancing;
+        }
+        .navbard{
+            margin-top:50px;
 
         }
+            
+        .btncover{
+            border:1px solid rgb(239, 130, 5);
+            background:none;
+            font-size:60px;
+            font-family:Dancing script;
+            cursor:pointer;
+            margin-left:400px;
+            color:rgb(239, 15, 8);
+        }
+       .btncover:hover{
+        color:goldenrod;
+        
+       } 
+       .btncover::before{
+        content:"";
+        position: absolute;
+        left:0;
+        width:100%;
+        height:0%;
+        z-index: -1;
+        transition: 0.8s;
+        border-radius: 0 0 50% 50%;
+
+
+       }
+        .btncoverbook{
+            border:1px solid rgb(239, 130, 5);
+            background:none;
+            font-size:20px;
+            font-family:Dancing script;
+            cursor:pointer;
+            margin-left:10px;
+            color:rgb(239, 15, 8);
+            height:60px;
+            width:150px;
+        }
+       .btncoverbook:hover{
+        color:goldenrod;
+        
+       } 
+       .btncoverbook::before{
+        content:"";
+        position: absolute;
+        left:0;
+        width:100%;
+        height:0%;
+        z-index: -1;
+        transition: 0.8s;
+        border-radius: 0 0 50% 50%;
+
+
+       }
+       .coverimage{
+        display: flex;
+        justify-content: space-between;
+        margin-top:50px;
+       }
+       .imgstyle{
+        height:340px;
+        width:300px;
+       }  
+       
+ .h{
+    width:450px;
+    border: 1px solid goldenrod;
+    margin-top:300px;
+    margin-right: 40px;
+    
+    
+ }
+ .h2nd{
+    width:550px;
+    border: 1px solid goldenrod;
+    margin-top:100px;
+    margin-left:560px;
+    
+    
+ }
+ .horijo{
+    width:200px;
+    border: 1px solid goldenrod;
+    
+    
+    
+ }
+ .recomendation{
+    display: flex;
+    justify-content: space-between;
+   
+ }
+ .menu1{
+    display: flex;
+    justify-content: space-between;
+ }
+ .container1 select{
+width:150px;
+height:60px;
+font-size:2opx;
+border:1px solid goldenrod;
+border-radius: 4px;
+color: bisque;;
+background-color: rgb(41, 40, 40);
+    }
+    .nav-tabs1{
+        border:0px;
+            margin-left: 0px;
+            margin-bottom: 30px;
+            color:wheat;
+            
+           
+            
+    }
+    .navbarstyle{
+        
+            font-size: 30px;
+            
+        
+    }
+    .paragraphstyle{
+        color: rgb(211, 136, 43);
+        font-family: Montserrat;
+        
+        
+        height:520px;
+        width:820px;
+        font-size: 12px;
+        background-color: black;
+        border: 2px solid whitesmoke;
+        
+    }
+    .naaa{
+        font-size:10px;
+        margin-left:100px;
+        color:wheat;
+        font-family:Dancing script;
+    }
+    .tab-content{
+        background-color:rgb(17, 16, 16) ;
+       width:405px;
+        
+        
+    } 
+    .nav-link1{
+      color:bisque;
+    }
+    
+    .card1{
+      position: relative;
+      height:190px;
+      width:400px;
+      background:black;
+      transition: 0.5s;
+    }
+    .card1:hover{
+      height:400px;
+    }
+    .card1 .lines
+    {
+      position: absolute;
+      inset: 0;
+      background: rgb(9, 9, 9);
+      overflow: hidden;
+      
+    }
+    .card1 .lines::before {
+content:'';
+position:absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+width:600px;
+height:120px;
+background: linear-gradient(transparent,goldenrod,goldenrod,goldenrod,transparent);
+animation:animate 4s linear infinite;
+    }
+    @keyframes animate{
+      0%{
+        transform: translate(-50%,-50%)rotate(0deg);
+      }
+      100%{
+        transform: translate(-50%,-50%)rotate(360deg);
+      }
+    }
+    .card1 .lines::after{
+      content:'';
+      position:absolute;
+      inset:3px;
+      background: black;
+
+    }
+
+    .card1 .imgboxcriteria{
+      position:absolute;
+      top:-50%;
+      left: 50%;
+      transform: translate(-50%);
+      width:150px;
+      height:150px;
+      background: black;
+      transition: 0.5s;
+      z-index: 10;
+      overflow: hidden;
+
+    }
+    
+    /* .card1 .imgboxcriteria::before{
+      content:'';
+      position:absolute;
+      top:-50%;
+      left: 50%;
+      width:500px;
+      height: 150px;
+      transform: translate(-50%,-50%);
+      background:linear-gradient(transparent,#ff3c7b, 150,#ff3c7b,#ff3c7b,transparent);
+      animation: animate2 6s linear infinite;
+    }
+    @keyframes animate{
+      0%{
+        transform: translate(-50%,-50%)rotate(360deg);
+      }
+      100%{
+        transform: translate(-50%,-50%)rotate(0deg);
+      }
+    }
+    .card1 .imgboxcriteria .imgstyle{
+      position: absolute;
+      top:10px;
+      left:10px;
+      z-index:1;
+      width:100px;
+      height:100px;
+      filter: grayscale(1);
+    } */
         
     </style>
 </head>
 <body>
-    <section class="banner">
-        <nav class="navbar navbar-expand-lg  " style="background-color: #1C1678;">
-            <div class="container-fluid">
-              <a class="navbar-brand" style="color: aliceblue;" href="#"><img src="logo.png"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="navbar justify-content-center" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll justify-content-center" style="--bs-scroll-height: 100px;">
-                  <li class="nav-item">
-                    <a class="nav-link active"style="color: aliceblue;" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"style="color: aliceblue;" href="#">Link</a>
-                  </li>
-                  
-                    
-               <div>
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                      <a class="nav-link active" style="color: aliceblue;"aria-current="page" href="#">Active</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" style="color: aliceblue;" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" style="color: aliceblue;" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" style="color: aliceblue;" aria-disabled="true">Disabled</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </nav>
-        <h1 class="heading-part">
-            E A R N    M O N E Y
-        </h1>
+    <section class="section1 container ">
         
-              <form class="d-flex" role="search">
-                <input class="form-control me-2"style="height:50px;width:600px; margin-left:400px;" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success bg-success"style="color:white;" type="submit">Search</button>
-              </form>
-            
-        <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1C1678" fill-opacity="1" d="M0,224L24,229.3C48,235,96,245,144,208C192,171,240,85,288,80C336,75,384,149,432,165.3C480,181,528,139,576,112C624,85,672,75,720,101.3C768,128,816,192,864,213.3C912,235,960,213,1008,176C1056,139,1104,85,1152,53.3C1200,21,1248,11,1296,21.3C1344,32,1392,64,1416,80L1440,96L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
-    </section>
-    <section>
-        <div class="secondpart">
-        <div style=" margin-left:200px;"><img src="createan account.png"class="rounded-circle"><h1 style="color:aliceblue;">Create an Account</h1></div>
-        <div><img src="shorten.png"class="rounded-circle"><h1 style="color:aliceblue;">Shorten link</h1></div>
-        <div style=" margin-right:200px;"><img src="dolar bag.png"class="rounded-circle"><h1 style="color:aliceblue;">Earn money</h1></div>
-
-    </div>
-    <div><hr style="background:rgb(243, 236, 236);"> </div>
-  
-    <div >
-         
-    <h1 class="heading-part1">
-        E A R N  E X T R A  M O N E Y
-    </h1>
-    <h1 style="margin-left:900px;color:blue;"><u>why you join with us?</u></h1>
-</div>
-<div class="third-part">
-<div class="row">
-<div class="col-4">
-    <div ><img src="frelencerlogo.jpeg"></div>
-    <div>FEATURED ADMINISTRATION PANEL</div>
-    <div>AdLinkFly is a completely free tool where you can create short links,<br> which apart from being free, you get paid! So, now you can make money from home,<br> when managing and protecting your links.</div>
-</div>
-<div class="col-4">
-    <div><img src="dollar.jpeg"></div>
-    <div>FEATURED ADMINISTRATION PANEL</div>
-    <div>AdLinkFly is a completely free tool where you can create short links,<br> which apart from being free, you get paid! So, now you can make money from home,<br> when managing and protecting your links.</div>
-</div>
-<div class="col-4">
-    <div><img src="earn dollar.jpeg"></div>
-    <div>FEATURED ADMINISTRATION PANEL</div>
-    <div>AdLinkFly is a completely free tool where you can create short links,<br> which apart from being free, you get paid! So, now you can make money from home,<br> when managing and protecting your links.</div>
-</div>
-
-<div class="row">
-<div class="col-4">
-    <div><img src="dolar bag.png"></div>
-    <div>FEATURED ADMINISTRATION PANEL</div>
-    <div>AdLinkFly is a completely free tool where you can create short links,<br> which apart from being free, you get paid! So, now you can make money from home,<br> when managing and protecting your links.</div>
-</div>
-<div class="col-4">
-    <div><img src="policy logo.jpeg"></div>
-    <div>FEATURED ADMINISTRATION PANEL</div>
-    <div>AdLinkFly is a completely free tool where you can create short links,<br> which apart from being free, you get paid! So, now you can make money from home,<br> when managing and protecting your links.</div>
-</div>
-<div class="col-4">
-    <div><img src="grapgh.png"></div>
-    <div>FEATURED ADMINISTRATION PANEL</div>
-    <div>AdLinkFly is a completely free tool where you can create short links,<br> which apart from being free, you get paid! So, now you can make money from home,<br> when managing and protecting your links.</div>
-</div>
-<div class="row">
-<div class="col-4">
-    <div><img src="grapgh.png"></div>
-    <div>FEATURED ADMINISTRATION PANEL</div>
-    <div>AdLinkFly is a completely free tool where you can create short links,<br> which apart from being free, you get paid! So, now you can make money from home,<br> when managing and protecting your links.</div>
-</div>
-<div class="col-4">
-    <div><img src="datalogo.png"></div>
-    <div>FEATURED ADMINISTRATION PANEL</div>
-    <div>AdLinkFly is a completely free tool where you can create short links,<br> which apart from being free, you get paid! So, now you can make money from home,<br> when managing and protecting your links.</div>
-</div>
-
-<div class="col-4">
-    <div><img src="grapgh.png"></div>
-    <div>FEATURED ADMINISTRATION PANEL</div>
-    <div>AdLinkFly is a completely free tool where you can create short links,<br> which apart from being free, you get paid! So, now you can make money from home,<br> when managing and protecting your links.</div>
-</div>
-</div>
-</div>
-</div>
-
-    </section>
-    
-    <section class="forth-part" style="background-color:#322e6b;color:aliceblue;">
-        <h1 style="font-size: 20px;margin-left: 700px;">Client's Testimonials</h1>
-        <h1 style="font-size: 40px;margin-left: 600px;">WHAT PEOPLE SAY?</h1>
-        <ul class="nav nav-tabs " id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link bat active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">First comment</button>
+        <div class="part1">
+        
+        <div class="verticle-line"><div class="verticle-line1"></div></div>
+        <ul class="nav justify-content-center navbard">
+            <li class="nav-item">
+              <a class="nav-link active navbardesign" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link bat" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">2nd comment</button>
+            <li class="nav-item">
+              <a class="nav-link navbardesign" href="#">PAGES</a>
             </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link bat" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">3rd comment</button>
+            <li class="nav-item">
+              <a class="nav-link navbardesign" href="#">PORTFOLIO</a>
             </li>
-
+            <li class="nav-item">
+              <a class="nav-link navbardesign " href="#">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbardesign " href="#">SHOP</a>
+            </li>
           </ul>
-          <div class="tab-content " id="myTabContent">
-            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0"> <p style="margin-left: 400px;"><img src="double-quotation-marks.png"style="height:50px;width:50px;margin-left:8SS0px;">You’re scrolling through Instagram, seeing photo after photo,<br> meme after meme, and then suddenly you see a photo of <br>your best friend who posted an incredible selfie and you need to say something <br>about it. They look incredible and they need to know how incredible they look! If you’re struggling on things<br> to comment under the photo that isn’t just “you look amazing!” we’ve got <br>just the comments for you! Here are 150 things you can comment on your friend’s Instagram post!<br><h1 style="margin-left: 700px;font-size: 30px;">---Nigar sultana</h1></p></div>
-            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0"> <p style="margin-left: 400px;"><img src="double-quotation-marks.png"style="height:50px;width:50px;margin-left:8SS0px;">You’re scrolling through Instagram, seeing photo after photo,<br> meme after meme, and then suddenly you see a photo of <br>your best friend who posted an incredible selfie and you need to say something <br>about it. They look incredible and they need to know how incredible they look! If you’re struggling on things to comment under the photo that isn’t just “you look amazing!” we’ve got <br>just the comments for you! Here are 150 things you can comment on your friend’s Instagram post!<br><h1 style="margin-left: 700px;font-size: 30px;">---Nigar sultana</h1></p></div>
-            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0"> <p><img src="double-quotation-marks.png"style="height:50px;width:50px;">You’re scrolling through Instagram, seeing photo after photo, meme after meme, and then suddenly you see a photo of your best friend who posted an incredible selfie and you need to say something about it. They look incredible and they need to know how incredible they look! If you’re struggling on things to comment under the photo that isn’t just “you look amazing!” we’ve got just the comments for you! Here are 150 things you can comment on your friend’s Instagram post!<br><h1 style="margin-left: 700px;font-size: 30px;">---Nigar sultana2</h1></p></div>
-            <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0"> <p><img src="double-quotation-marks.png"style="height:50px;width:50px;">You’re scrolling through Instagram, seeing photo after photo, meme after meme, and then suddenly you see a photo of your best friend who posted an incredible selfie and you need to say something about it. They look incredible and they need to know how incredible they look! If you’re struggling on things to comment under the photo that isn’t just “you look amazing!” we’ve got just the comments for you! Here are 150 things you can comment on your friend’s Instagram post!<br><h1 style="margin-left: 700px;font-size: 30px;">---Nigar sultana3</h1></p></div>
+
+          <div class="overley"> 
+            <h1 style="margin-left:220px;font-size: 80px;font-family: Dancing script;"> THE FOOD HEAVEN</h1>
+            <p style="color:rgb(200, 44, 44);margin-left:40px;">
+                <b>WE HAVE A PROPPER PASSION FOR COOKING.LOVE IS THE SECRET INGREDIENT.</b>
+            </p>
+            <button class="btncover">View more</button>
+            <div class="coverimage">
+                <div>
+                   <div class="slider-frame">
+                    <div class="slide-images">
+                    <div class="image-container">
+                      <marquee scrollamount="5"duration="down">  <img src="../restourant/cover/cover4.jpg"class="imgstyle"></marquee>
+                    </div>
+                   
+                </div>
+            </div>
+                    
+                
+            </div>
+                <div>
+                    <marquee scrollamount="5"duration="left">  <img src="../restourant/cover/cover2.jpg"class="imgstyle"></marquee>
+            </div>
+                <div>
+                    <marquee scrollamount="5"duration="left"> <img src="../restourant/cover/cover3.jpg"class="imgstyle"></marquee>
+            </div>
+        </div>
+        <div class="h2nd"></div>
+
           </div>
-       
+          
+        <div class="verticle-line22"><div class="verticle-line2"></div></div>
+        </div>
+        <div>
+
+        </div>
+
+        </div>
+        <div >
+            <div class="verticle-lineleft"><div class="verticle-lineleft1"></div></div>
+            <div class="verticle-line"><div class="verticle-line1"><div>
+
+               
 
 
-    </section>
-    <section>
-        <h1 style="color:green;margin-left:600px;font-size: 20px;margin-top:40px;">Numbers Speak For Themselves</h1>
-        <h1 style="color:#322e6b;margin-left:600px;">FAST <u>GRO</u>WING</h1>
-        <div style="display:flex;justify-content: space-between; margin-top:100px; margin-left:250px;margin-right:250px;margin-bottom: 200px;">
-        <div ><img src="wind.png"style="height:100px;width:100px;"><h1 style="font-size: 40px;">233,4456<br><p style="font-size: 20px; color:green;">TOTAL CLICKS</p></h1></div>
-        <div><img src="laptoppart.jpeg"style="height:100px;width:100px;"><h1 style="font-size: 40px;">233,4456<br><p style="font-size: 20px;color:green;">TOTAL LINKS</p></h1></div>
-        <div><img src="grouplogo.png"style="height:100px;width:100px;"><h1 style="font-size: 40px;">233,4456<br><p style="font-size: 20px;color:green;">REGISTERED USERS</p></h1></div>
-    </div>
-    </section>
-    <section >
-<div class="banner1">
-    <svg  class="waves1"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1C1678" fill-opacity="1" d="M0,224L8.9,202.7C17.8,181,36,139,53,144C71.1,149,89,203,107,224C124.4,245,142,235,160,218.7C177.8,203,196,181,213,176C231.1,171,249,181,267,170.7C284.4,160,302,128,320,133.3C337.8,139,356,181,373,176C391.1,171,409,117,427,117.3C444.4,117,462,171,480,192C497.8,213,516,203,533,208C551.1,213,569,235,587,234.7C604.4,235,622,213,640,176C657.8,139,676,85,693,80C711.1,75,729,117,747,133.3C764.4,149,782,139,800,138.7C817.8,139,836,149,853,181.3C871.1,213,889,267,907,245.3C924.4,224,942,128,960,90.7C977.8,53,996,75,1013,90.7C1031.1,107,1049,117,1067,117.3C1084.4,117,1102,107,1120,90.7C1137.8,75,1156,53,1173,80C1191.1,107,1209,181,1227,197.3C1244.4,213,1262,171,1280,176C1297.8,181,1316,235,1333,218.7C1351.1,203,1369,117,1387,96C1404.4,75,1422,117,1431,138.7L1440,160L1440,320L1431.1,320C1422.2,320,1404,320,1387,320C1368.9,320,1351,320,1333,320C1315.6,320,1298,320,1280,320C1262.2,320,1244,320,1227,320C1208.9,320,1191,320,1173,320C1155.6,320,1138,320,1120,320C1102.2,320,1084,320,1067,320C1048.9,320,1031,320,1013,320C995.6,320,978,320,960,320C942.2,320,924,320,907,320C888.9,320,871,320,853,320C835.6,320,818,320,800,320C782.2,320,764,320,747,320C728.9,320,711,320,693,320C675.6,320,658,320,640,320C622.2,320,604,320,587,320C568.9,320,551,320,533,320C515.6,320,498,320,480,320C462.2,320,444,320,427,320C408.9,320,391,320,373,320C355.6,320,338,320,320,320C302.2,320,284,320,267,320C248.9,320,231,320,213,320C195.6,320,178,320,160,320C142.2,320,124,320,107,320C88.9,320,71,320,53,320C35.6,320,18,320,9,320L0,320Z"></path></svg>
+                <div>
+                    <div class="recomendation">
+
+<div><img src="../restourant/menu/portfolio-small-img-1.jpg"style="height:600px;width:600px;margin-top:100px;margin-right:60px;"></div>
+
+<div><h1 style="font-family:Dancing script;color:wheat;font-size: 40px;margin-left:110px;margin-top: 200px;">Recommendations</h1><h1 style="color:wheat;font-size: 40px;margin-left: 30px;">OUR BEST SPECIALTIES</h1><p style="color:wheat;font-size: 20px;width:500px;font-family:open sans;justify-content: space-around;">Lorem ipsum dolor ng eli sed do eiu smotem por incididunt ut abore et doloremagali qua. Ut  nostrud exercitation </p><button class="btncover"style="margin-left:100px;">View more</button>
+    <div class="h"></div>
+
+
 </div>
-</section>
 
+
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+
+
+
+
+        <div class="menu1">
+            <div class="verticle-line"style="color:wheat;height:500px;"></div>
+            <div class="overley5">
+              <div class="part1">
+              
+              
+              <div class="card1 "style="margin-left:100px;margin-right:50px;">
+                <div class="lines"></div>
+                <div class="imgboxcriteria">
+                  <div class="imgstyle"><img src="../restourant/menu/home-8-img-shop-1-800x800.jpg"style="height:150px;width:150px;"></div>
+
+                </div>
+
+              </div>
+              <div class="card1 "style="margin-right:50px;">
+                <div class="lines"></div>
+                <div class="imgboxcriteria">
+                  <div class="imgstyle"><img src="../restourant/menu/home-8-img-shop-2-800x800.jpg"style="height:150px;width:150px;"></div>
+
+                </div>
+
+              </div>
+              <div class="card1 "style="margin-right:50px;">
+                <div class="lines"></div>
+                <div class="imgboxcriteria">
+                  <div class="imgstyle"><img src="../restourant/menu/home-8-img-shop-3-800x800.jpg"style="height:150px;width:150px;"></div>
+
+                </div>
+
+              </div>
+             
+              
+              
+              <div class="card1 "style="margin-right:0px;">
+                <div class="lines"></div>
+                <div class="imgboxcriteria">
+                  <div class="imgstyle"><img src="../restourant/menu/home-8-img-shop-4-800x800.jpg"style="height:150px;width:150px;"></div>
+
+                </div>
+
+              </div>
+              
+             
+              
+              </div>
+              <div class="part1"style="margin-top:150px;">
+              
+              
+              <div class="card1 "style="margin-left:100px;margin-right:50px;">
+                <div class="lines"></div>
+                <div class="imgboxcriteria">
+                  <div class="imgstyle"><img src="../restourant/menu/home-8-img-shop-6.jpg"style="height:150px;width:150px;"></div>
+
+                </div>
+
+              </div>
+              <div class="card1 "style="margin-right:50px;">
+                <div class="lines"></div>
+                <div class="imgboxcriteria">
+                  <div class="imgstyle"><img src="../restourant/menu/home-8-img-shop-7.jpg"style="height:150px;width:150px;"></div>
+
+                </div>
+
+              </div>
+              <div class="card1 "style="margin-right:50px;">
+                <div class="lines"></div>
+                <div class="imgboxcriteria">
+                  <div class="imgstyle"><img src="../restourant/menu/home-8-img-shop-9.jpg"style="height:150px;width:150px;"></div>
+
+                </div>
+
+              </div>
+             
+              
+              
+              <div class="card1 "style="margin-right:0px;">
+                
+                <div class="lines"></div>
+                <div class="imgboxcriteria">
+                  <div class="imgstyle"><img src="../restourant/menu/home-8-img-shop-8.jpg"style="height:150px;width:150px;"></div>
+
+                </div>
+
+              </div>
+              
+             
+              
+              </div>
+                                    
+              </div>
+            
+            <div class="overley4">
+              
+                <div>
+                    <ul class="nav nav-tabs navbarstyle nav-tabs1" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link nav-link1 " id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" >STARTERS</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link nav-link1" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link nav-link1" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                         
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+    
+                        <div>
+                            <h1>NEW ARRIVEL<button style="background-color: black;color:rgb(239, 15, 8);border:0px;">offer<i class="fa fa-star" aria-hidden="true"></i></button></h1>
+                           
+                        </div>
+                        
+                        
+                        <div class="tab-pane fade show " id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0"><div class="card mb-3" style="max-width: 540px;">
+                            <div class="paragraphstyle">
+                            
+                            <div class="row ">
+                              <div class="col-md-3">
+                                <img src="../restourant/menu/main-images-1.jpg"style="height:200px;width:200px;" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-3">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text"style="height:200px;width:200px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a<br> little bit longer.</p>
+                                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <img src="../restourant/menu/main-images-2.jpg"style="height:200px;width:200px;" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-3">
+                                <div class="card-body"style="height:200px;width:200px;">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text"style="height:200px;width:200px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a <br>little bit longer.</p>
+                                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <img src="../restourant/menu/main-img-5.jpg"style="height:200px;width:200px;" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-3">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <img src="../restourant/menu/main-images-3.jpg"style="height:200px;width:200px;" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-3">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div></div></div>
+                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0"><div class="paragraphstyle">
+                            
+                            <div class="row ">
+                              <div class="col-md-3">
+                                <img src="../restourant/menu/j8.jpg"style="height:200px;width:200px;" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-3">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text"style="height:200px;width:200px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a<br> little bit longer.</p>
+                                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <img src="../restourant/menu/j10.jpg"style="height:200px;width:200px;" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-3">
+                                <div class="card-body"style="height:200px;width:200px;">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text"style="height:200px;width:200px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a <br>little bit longer.</p>
+                                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <img src="../restourant/menu/j11.jpg"style="height:200px;width:200px;" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-3">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <img src="../restourant/menu/j16.jpg"style="height:200px;width:200px;" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-3">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div></div></div>
+                        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0"><p class="paragraphstyle">Lorem ipsum dolor sit amet, consectet urta dipis isu cingelit, sed do eiusmodsl ntetm mpor incida idunt utvlabore eti.
+
+                            aliqua. Ut enim ad minim danor venia quisno strud exercitation ullamco labor nisiutse ns aliquip ex ea commodo labr.</p></div>
+                        
+                      </div>
+                </div>
+            </div>
+            <div class="verticle-line"style="color:wheat;height:550px;margin-right:40px;"></div>
+        </div>
+        <div class="menu1">
+                
+            <div class="verticle-line"style="color:wheat;height:750px;"></div> 
+            <div class="overley3">
+                <h1 style="font-family:Dancing script;margin-left:500px;color:bisque;">Our Story</h1>
+                <h1 style="font-family:Montserrat;margin-left:450px;font-size: 50px;color:bisque;">ABOUT US</h1>
+                <h1 style="font-family:Montserrat;margin-left:300px;font-size: 15px;color:bisque;">Lorem ipsum dolor sit amet, consectet adipisicing eli sed do eiu smotem por incididunt ut abore et dolore magali qua. Ut enim ad minm eni amquis nostrud exercitation.</h1>
+                <div class="menu1">
+                    <img src="../restourant/menu/main-img-1.jpg"style="height:500px;width:400px;margin-right:60px;margin-left:00px;margin-top:30px;">
+                    <img src="../restourant/logo/Screenshot 2024-04-22 105354.png"style="height:500px;width:400px;margin-right:40px;margin-top:30px;">
+                    <img src="../restourant/menu/chocolate1.jpg"style="height:500px;width:400px;margin-top:30px;">
+
+                </div>
+                
+            </div>
+            <div class="verticle-linemiddle1"></div>
+            <div class="verticle-linemiddle2"></div>
+            <div class="verticle-linemiddle3"></div>
+            <div class="verticle-linemiddle4"></div> 
+            <div class="verticle-line22"style="color:wheat;height:750px;"></div>  
+        </div>
+        
+        <div>
+            <h1 style="font-family:Dancing script;color:wheat;font-size: 40px;margin-left:550px;margin-top: 30px;">Special selection</h1>
+            <h1 style="color:wheat;font-size: 40px;margin-left:500px;">FROM OUR MENU</h1>
+            <hr style="height:2px solid goldrod;width:400px;margin-left:450px;color:goldenrod;">
+            <div class="menu1"style="margin-top:60px;">
+                <div class="menu1">
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-left:100px;">BEEF BURGER MEAL</h1>
+                <hr class="horijo">
+                
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-left:90px;">$32</h1>
+            </div>
+            <div class="menu1">
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-left:60px;">PAN SEARED SCALLOPS</h1>
+                <hr class="horijo">
+               
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-right:130px;">$32</h1>
+            </div>
+            </div>
+            <div class="menu1"style="margin-top:60px;">
+                <div class="menu1">
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-left:100px;">ROASTED LAMB RUMP</h1>
+                <hr class="horijo">
+                
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-left:70px;">$32</h1>
+            </div>
+            <div class="menu1">
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-left:50px;">BAKED CAMEMBERT</h1>
+                <hr class="horijo">
+               
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-right:130px;">$32</h1>
+            </div>
+            </div>
+            <div class="menu1"style="margin-top:60px;">
+                <div class="menu1">
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-left:100px;">PAN SEARED SEA BASS</h1>
+                <hr class="horijo">
+                
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-left:70px;">$32</h1>
+            </div>
+            <div class="menu1">
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-left:10px;">BRAISED OX CHEEK RAVIOLI</h1>
+                <hr class="horijo">
+               
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-right:130px;">$32</h1>
+            </div>
+            </div>
+            <div class="menu1"style="margin-top:60px;">
+                <div class="menu1">
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-left:100px;">KING PRAWNS AND LOBSTER</h1>
+                <hr class="horijo">
+                
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-right:10px;margin-left: 10px;">$32</h1>
+            </div>
+            <div class="menu1">
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-left:50px;">CORN FED CHICKEN</h1>
+                <hr class="horijo">
+               
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-right:130px;">$32</h1>
+            </div>
+            </div>
+            <div class="menu1"style="margin-top:60px;">
+                <div class="menu1">
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-left:100px;">CITRUS CURED SALMON</h1>
+                <hr class="horijo">
+                
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-left:60px;">$32</h1>
+            </div>
+            <div class="menu1">
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-left:1px;">NDUJA PORK CHICKEN TERRINE</h1>
+                <hr class="horijo">
+               
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-right:130px;">$32</h1>
+            </div>
+            </div>
+            
+            </div>
+            <button class="btncover"style="margin-top:100px;margin-left:500px;">select menu</button>
+           
+            <div style="height:400px;width:1300px;background-color: rgb(41, 40, 40);margin-top:100px;">
+                <div class="menu1">
+                <div class="verticle-linemiddle1"style="color:wheat;"></div>
+            <div class="overley2">
+                <h1 style="font-family:Dancing script;margin-left:350px;color:bisque;">Reservations</h1>
+                <h1 style="font-family:Montserrat;margin-left:250px;font-size: 50px;color:bisque;">BOOK  A  TABLE</h1>
+                <div class="menu1"style="margin-top:60px;margin-right:150px;">
+                    <div class="container1">
+                        <select name="" id="">
+                            <option value="1 person">1 person</option>
+                            <option value="1 person">2 person</option>
+                            <option value="1 person">3 person</option>
+                            <option value="1 person">4 person</option>
+                            <option value="1 person">5 person</option>
+                            <option value="1 person">6 person</option>
+                            <option value="1 person">7 person</option>
+                            <option value="1 person">8 person</option>
+                            <option value="1 person">9 person</option>
+                            <option value="1 person">10 person</option>
+                            <option value="1 person">11 person</option>
+                            <option value="1 person">12 person</option>
+                            <option value="1 person">13 person</option>
+                
+                        </select>
+                    
+                </div>
+                <div class="container1">
+                    <select name="DATE" id="">
+                        <option value="1/2/2024">1/2/2024</option>
+                        <option value="2/2/2024">2/2/2024</option>
+                        <option value="1 person">3/2/2024</option>
+                        <option value="1 person">4/2/2024</option>
+                        <option value="1 person">5/2/2024</option>
+                        <option value="1 person">26/2/2024</option>
+                        <option value="1 person">7/2/2024</option>
+                        <option value="1 person">27/2/2024</option>
+                        <option value="1 person">28/2/2024</option>
+                        <option value="1 person">21/2/2024</option>
+                        <option value="1 person">24/2/2024</option>
+                        <option value="1 person">25/2/2024</option>
+                        <option value="1 person">25/2/2024</option>
+            
+                    </select>
+                
+            </div>
+                    <div class="container1">
+                        <select name="" id="">
+                            <option value="1 person">11:00 am </option>
+                            <option value="1 person">11:00 pm </option>
+                            <option value="1 person">04:00 pm </option>
+                            <option value="1 person">06:00 pm </option>
+                            <option value="1 person">06:00 pm </option>
+                            <option value="1 person">10:00 pm </option>
+                            <option value="1 person">09:00 pm </option>
+                            <option value="1 person">1:00 pm </option>
+                            <option value="1 person">08:00 pm </option>
+                            <option value="1 person">03:00 pm </option>
+                            <option value="1 person">1:00 pm </option>
+                            <option value="1 person">04:00 pm </option>
+                            <option value="1 person">11:00 pm </option>
+                
+                        </select>
+                    
+                </div>
+                    <div >
+                        
+                         
+                            <button class="btncoverbook">BOOK NOW</button>
+                
+                        
+                    
+                </div>
+                   
+                    
+            </div>
+        </div>
+                <div class="verticle-line22book"></div>
+                
+            </div>
+                <!-- <h1 style="font-size: 20px;font-family:Dancing script;">Reservations</h1>
+                <h1>BOOK A TABLE</h1> -->
+            </div>
+
+        </div>
+        <hr style="height:2px solid goldrod;width:900px;margin-left:100px;color:goldenrod;">
+        <hr style="height:2px solid goldrod;width:600px;margin-left:550px;color:goldenrod;">
+        <hr style="height:2px solid goldrod;width:700px;margin-left:600px;color:goldenrod;">
+        <div class="menu1"style="margin-top:10px;">
+            <div class="verticle-lineabout"><div class="verticle-line1about"></div></div>
+            <div class="overley1">
+              <img src="../restourant/menu/footer-logo.png"style="margin-left:310px;">
+                <h1 style="font-family: Dancing script;margin-top: 70px;margin-left:250px;margin-bottom: 60px;">ADDRESS</h1>
+                <h1 style="margin-left:150px;color:blanchedalmond;font-size: 20px;">Laurent Restaurant & Fine dining, 71 Madison Ave<br>
+
+                   <span style="margin-left: 30px;">10013 New York, 914-309-7030, <br>reservations@laurent.com</span> 
+                    
+                    Open: 09:00 am – 01:00 pm</h1>
+                    <hr style="height:2px solid goldrod;width:600px;margin-left:50px;color:goldenrod;">
+                    <i class="fa-brands fa-facebook"style="font-size:80px;margin-top:50px;margin-left:60px;"></i>
+                    <i class="fa-brands fa-instagram"style="font-size:80px;margin-left:100px;"></i>
+                    <i class="fa-brands fa-twitter"style="font-size:80px;margin-left:100px;"></i>
+                    <i class="fa-solid fa-location-dot"style="font-size:80px;margin-left:100px;"></i>
+                    
+            </div>
+            <div class="verticle-linemiddle1"></div>
+            <div class="verticle-linemiddle2"></div>
+            <div class="verticle-linemiddle3"></div>
+            <div class="verticle-linemiddle4"></div>
+            <div class="verticle-line22about"><div class="verticle-line2about"></div></div>
+        </div>
+        
+    </section>
+   
+    
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-<div class="content">
-    
-</div>
 </html>
